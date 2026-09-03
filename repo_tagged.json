@@ -1,0 +1,23 @@
+[
+  {
+    "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations.",
+    "StartLine": 1,
+    "EndLine": 2,
+    "StartColumn": 13,
+    "EndColumn": 1,
+    "Match": "API_HOST=arbiever2.ever-chain.xyz",
+    "Secret": "arbiever2.ever-chain.xyz",
+    "File": "frontend.env",
+    "SymlinkFile": "",
+    "Commit": "95ae51e14d0c05738de7eee138df96521b4cfab6",
+    "Entropy": 3.7201755,
+    "Author": "ArbiEver Bot",
+    "Email": "claude@arbiever.local",
+    "Date": "2026-05-23T09:15:16Z",
+    "Message": "Initial: ArbiEver Blockscout full-stack deployment\n\n5-container minimal Blockscout setup for ArbiEver L2 (chain 580511):\n- redis, postgres, backend (6.10.1), frontend (v1.36.4), nginx proxy\n- Pre-built proxy image: silverruler/arbiever-blockscout (DockerHub)\n- Brand: ArbiEver, ETE, custom favicon, Light theme default\n- L1 propagation via host.docker.internal:8449\n- External: https://arbiever2.ever-chain.xyz (Cloudflare + OCI stunnel + VPN)",
+    "Tags": [],
+    "RuleID": "generic-api-key",
+    "Fingerprint": "95ae51e14d0c05738de7eee138df96521b4cfab6:frontend.env:generic-api-key:1",
+    "repo": "ArbiEver-BlockScout"
+  }
+]
